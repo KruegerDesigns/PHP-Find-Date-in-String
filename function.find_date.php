@@ -51,7 +51,7 @@ function find_date( $string ) {
 	}
 
 	//Match 5th 1st day:
-	preg_match( '/([0-9]?[0-9])(st|nd|th)/', $string, $matches_day );
+	preg_match( '/([0-9]?[0-9])(st|nd|rd|th)/', $string, $matches_day );
 	if ( $matches_day ) {
 		if ( $matches_day[1] )
 			$day = $matches_day[1];
